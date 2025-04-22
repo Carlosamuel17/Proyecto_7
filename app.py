@@ -19,7 +19,7 @@ if build_histogram: # al hacer clic en el botón se crea un mensaje y el histogr
 build_scatter = st.checkbox('Construir un gráfico de dispersión de precio vs distancia recorrida')
 
 if build_scatter: # al hacer clic en el botón se crea un mensaje y el gráfico de dispersión interactivo
-    st.write('Gráfico de disperción de precio vs distancia recorrida')
+    st.write('Gráfico de dispersión de precio vs distancia recorrida')
     fig = px.scatter(car_data, x="odometer", y="price")
     st.plotly_chart(fig, use_container_width=True)
 
